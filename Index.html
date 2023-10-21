@@ -1,0 +1,89 @@
+ 
+<html>
+    <head>
+      <title>Emoção Em Emoji</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+        <h3 class="btn btn-warning heading">APP EMOÇÃO EM EMOJI
+        <br>
+       
+
+        <span>&#128522;</span>
+         <!--Utilize a tag para colocar as imagens uma ao lado da outra-->
+        <!--Código das imagens que faltam:-->
+        <span>&#128512</span>
+        <span>&#128532 </span>
+        <span>&#128546 </span>
+        <span> &#128545 </span>
+        <span> &#128548 </span>
+       
+       </h3>
+  
+        <br><br>
+  
+        <p style="font-size: 22px;">Tire sua selfie para gerar o emoji
+            <br>
+            <!-- Utilize o código 'style= "color: yellow"' para definir a cor do primeiro texto como amarelo, segundo texto como preto e terceiro texto como vermelho-->
+          <b style= "color: yellow">Você está Feliz?</b>
+          <br>
+          <b style= "color: rgb(0, 0, 0)">Você está Triste?</b>
+          <br>
+          <b style= "color: rgb(255, 0, 0)">Você está Irritado?</b>
+          <br>
+        </p>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Visualização da Webcam:</label>
+            <div id="camera"></div>
+            <br><br>
+            <!-- Programe o seguinte:
+            1. Quando o botão for clicado aconteça a função 'take_snapshot'
+            2. Esse botão deverá ter o texto 'Capturar imagem'-->
+            <button onClick="take_snapshot()" class="butaun1"> Capturar Imagem </button>
+            
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Previsão 1: </label>
+            <p class="emotion_name" id="result_emotion_name"></p>
+            <p class="emoji" id="update_emoji"></p>
+  
+            <label>Previsão 2: </label>
+            <p class="emotion_name" id="result_emotion_name2"></p>
+            <p class="emoji" id="update_emoji2"></p>
+          </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Foto: </label>
+            <div id="result"></div>
+            <br><br>
+            <!-- Crie um botão que...
+            1. Aconteça a função 'check' quando for clicado
+            2. O texto escrito dentro do botão seja 'Prever emoção'-->
+           
+           <button onClick="check()" class="butaun2"> Prever Emoção </button>
+  
+      </center>
+  
+    </div>
+  
+  <!-- Conecte o código javascript-->
+  <script src="maindoaluno.js"></script>
+  
+    </body>
+  </html>
+  
+   
